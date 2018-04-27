@@ -21,6 +21,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.uama.vieoplayer.example.ScrollViewAutoFullScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="点击全屏播放"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
             android:name="com.uama.vieoplayer.example.ScrollViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="ScrollView小窗口模式播放"

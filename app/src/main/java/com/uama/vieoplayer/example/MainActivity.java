@@ -15,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void autoFullScreen(View view) {
+        startActivity(new Intent(this, ScrollViewAutoFullScreenActivity.class));
+    }
+    
     public void scrollView(View view) {
         startActivity(new Intent(this, ScrollViewActivity.class));
     }
