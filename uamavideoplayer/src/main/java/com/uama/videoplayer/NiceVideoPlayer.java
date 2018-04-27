@@ -655,14 +655,17 @@ public class NiceVideoPlayer extends FrameLayout
                 if (mCurrentMode == MODE_TINY_WINDOW) return;
                 NiceVideoPlayer.this.removeView(mContainer);
                 
-                ViewGroup contentView = (ViewGroup) NiceUtil.scanForActivity(mContext)
-                        .findViewById(android.R.id.content);
-                FrameLayout.LayoutParams params = getTinyWindowParams();
-                contentView.addView(mContainer, params);
-                
-                mCurrentMode = MODE_TINY_WINDOW;
-                mController.onPlayModeChanged(mCurrentMode);
-                LogUtil.d("MODE_TINY_WINDOW");
+                try {
+                    ViewGroup contentView = (ViewGroup) NiceUtil.scanForActivity(mContext)
+                            .findViewById(android.R.id.content);
+    
+                    FrameLayout.LayoutParams params = getTinyWindowParams();
+                    contentView.addView(mContainer, params);
+    
+                    mCurrentMode = MODE_TINY_WINDOW;
+                    mController.onPlayModeChanged(mCurrentMode);
+                    LogUtil.d("MODE_TINY_WINDOW");
+                } catch (Exception e) {}
             }
         });
     }

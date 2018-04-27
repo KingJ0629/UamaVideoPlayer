@@ -15,7 +15,7 @@ public class UseInFragActivity extends AppCompatActivity {
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .add(R.id.container, new DemoFragenment())
+                .add(R.id.container, new DemoScrollFragenment())
                 .commit();
     }
 
