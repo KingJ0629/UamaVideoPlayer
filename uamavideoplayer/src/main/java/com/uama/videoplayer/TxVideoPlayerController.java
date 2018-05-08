@@ -429,6 +429,13 @@ public class TxVideoPlayerController
             cancelDismissTopBottomTimer();
         }
     }
+    
+    /**
+     * 底部栏是否可见
+     */
+    public boolean getBottomVisible() {
+        return mBottom.getVisibility() == View.VISIBLE;
+    }
 
     /**
      * 开启top、bottom自动消失的timer

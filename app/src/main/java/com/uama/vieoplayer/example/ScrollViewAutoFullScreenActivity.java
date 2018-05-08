@@ -93,8 +93,8 @@ public class ScrollViewAutoFullScreenActivity extends AppCompatActivity {
 	@Override
 	public void onBackPressed() {
 		// 横竖屏状态
-		boolean isProtrait = NiceUtil.isScreenOrientationPortrait(this);
-		if (isProtrait) {
+		boolean isPortrait = NiceUtil.isScreenOrientationPortrait(this);
+		if (isPortrait) {
 			finish();
 		} else {
 			NiceUtil.scanForActivity(this).setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

@@ -313,8 +313,8 @@ public class AutoFullVideoPlayerController
                 mNiceVideoPlayer.enterFullScreen();
             } else if (mNiceVideoPlayer.isFullScreen()) {
                 // 横竖屏状态
-                boolean isProtrait = NiceUtil.isScreenOrientationPortrait(mContext);
-                if (isProtrait) {
+                boolean isPortrait = NiceUtil.isScreenOrientationPortrait(mContext);
+                if (isPortrait) {
                     NiceUtil.scanForActivity(mContext).setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
                 } else {
                     NiceUtil.scanForActivity(mContext).setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

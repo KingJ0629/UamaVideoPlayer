@@ -369,6 +369,13 @@ public class TBVideoPlayerController
         }
     }
     
+    /**
+     * 底部栏是否可见
+     */
+    public boolean getBottomVisible() {
+        return mBottom.getVisibility() == View.VISIBLE;
+    }
+    
     private ControllerViewVisibleListener mControllerViewVisibleListener;
     
     /**
