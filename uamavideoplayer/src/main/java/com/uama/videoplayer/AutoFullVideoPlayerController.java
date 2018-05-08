@@ -490,4 +490,9 @@ public class AutoFullVideoPlayerController
     protected void hideChangeBrightness() {
         mChangeBrightness.setVisibility(View.GONE);
     }
+    
+    @Override
+    protected boolean getBottomVisible() {
+        return mBottom.getVisibility() == View.VISIBLE;
+    }
 }

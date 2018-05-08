@@ -317,6 +317,12 @@ public class NiceVideoPlayer extends FrameLayout
         }
         return 0;
     }
+    
+    public boolean getBottomVisible() {
+        if (mController == null)
+            return false;
+        return mController.getBottomVisible();
+    }
 
     @Override
     public long getDuration() {

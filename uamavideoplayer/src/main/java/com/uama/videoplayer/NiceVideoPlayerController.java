@@ -294,4 +294,9 @@ public abstract class NiceVideoPlayerController
      * 在手势ACTION_UP或ACTION_CANCEL时调用。
      */
     protected abstract void hideChangeBrightness();
+
+    /**
+     * 获取Bottom显示状态
+     */
+    protected abstract boolean getBottomVisible();
 }
