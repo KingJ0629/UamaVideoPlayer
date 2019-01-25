@@ -318,6 +318,7 @@ public class NiceVideoPlayer extends FrameLayout
         return 0;
     }
     
+    @Override
     public boolean getBottomVisible() {
         if (mController == null)
             return false;

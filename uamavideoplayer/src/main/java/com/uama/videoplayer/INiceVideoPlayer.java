@@ -99,7 +99,12 @@ public interface INiceVideoPlayer {
      * @return 当前音量值
      */
     int getVolume();
-
+    
+    /**
+     * 获取当前底部进度条显示状态
+     */
+    boolean getBottomVisible();
+    
     /**
      * 获取办法给总时长，毫秒
      *
